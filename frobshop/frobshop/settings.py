@@ -29,7 +29,7 @@ SECRET_KEY = '*r@_u_t$oobi!7q@9qpquo4($vl2$&z^9t&e-yip2oloxb!a#v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*', ]
 
 
 # Application definition
@@ -50,6 +50,30 @@ INSTALLED_APPS = [
     'widget_tweaks',
 ] + get_core_apps()
 
+
+LANGUAGE_CODE = 'zh-cn'
+
+# Includes all languages that have >50% coverage in Transifex
+# Taken from Django's default setting for LANGUAGES
+gettext_noop = lambda s: s
+LANGUAGES = (
+    ('en-gb', gettext_noop('British English')),
+    ('zh-cn', gettext_noop('Simplified Chinese')),
+)
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
+
+TIME_ZONE = 'Asia/Shanghai'
+
+USE_I18N = True
+
+USE_L10N = True
+
+USE_TZ = True
+
+
 SITE_ID = 1
 
 MIDDLEWARE = [
@@ -63,6 +87,8 @@ MIDDLEWARE = [
 
     'oscar.apps.basket.middleware.BasketMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
+
+    'django.middleware.locale.LocaleMiddleware',
 ]
 
 AUTHENTICATION_BACKENDS = (
@@ -140,16 +166,6 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
-
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
-
-USE_I18N = True
-
-USE_L10N = True
-
-USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
