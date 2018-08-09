@@ -1,0 +1,359 @@
+﻿翻译Oscar源代码
+oscar 
+
+app 应用程序s 
+	address 地址栏
+		abstract_models 模型 抽象模型
+		admin  管理员
+		config 配置
+		forms 表格
+		models 模型
+
+	
+	analytics  分析
+		abstract_models 模型 抽象模型
+		admin  管理员
+		config 配置
+		models 模型
+		receivers 接受器
+		reports	报告
+		scores 数量
+		
+	
+	basket	购物篮
+		abstract_models 模型 抽象模型
+        admin  管理员
+		app 应用程序
+        config 配置
+		forms 表格
+		formsets 表格集
+		managers 管理者
+		middleware 中间件
+       	models 模型   
+        reports	报告
+		signals 信号，指示 
+		utils 实用工具
+		views	视图
+			
+	
+	catalogue 目录
+			reviews	视图 评论
+				abstract_models 模型 抽象模型
+				admin  管理员
+				app 应用程序
+				config 配置
+				forms 表格
+				managers 管理者
+				models 模型   
+				signals 信号，指示 
+				utils 实用工具
+				views	视图
+				
+			
+		abstract_models 模型 抽象模型
+        admin  管理员
+		app 应用程序
+		categories 类别
+        config 配置
+		exceptions 例外情况
+		managers 管理者
+		models 模型
+		product_attributes 产品属性
+		receivers 接受器
+		search_handlers 搜索处理程序
+		signals 信号，指示 
+		utils 实用工具
+		views	视图			
+			
+	
+	checkout 查看
+		app 应用程序
+		caculators 计算器
+		config 配置
+		context_processors 上下文处理器
+		exceptions 例外情况
+		forms 表格
+		mixins 混入
+		models 模型
+		session	会话
+		signals 信号，指示 
+		utils 实用工具
+		views	视图 视图
+	
+	customer 顾客
+			alerts 提醒
+				receivers 接收器
+				utils 实用工具
+				views	视图 视图
+			notifications 通知
+				context_processors 上下文处理器
+				services 服务
+				views	视图 视图
+			wishlists 愿望清单
+				views	视图 视图
+		
+
+		abstract_models 模型	 抽象模型
+		admin 管理员
+		app 应用程序	 应用程序
+		auth_backends (authentication backends)身份验证后端
+		config 配置
+		forms 表格
+		history 历史
+		managers 管理者
+		mixins  混入
+		models 模型  模型
+		receivers  接收器
+		signals 信号，指示 
+		utils 实用工具
+		views	视图 视图
+
+
+	dashboard	仪表板
+			catalogue 目录
+				app 应用程序
+				config 配置
+				forms 表格
+				formsets 表格集
+				models 模型
+				tables 表格
+				views	视图
+				widgets 小部件
+				
+			communications 通信
+				app 应用程序
+				config 配置
+				forms 表格
+				models 模型
+				views	视图
+				
+			offers 报价
+				app 应用程序
+				config 配置
+				forms 表格
+				models 模型
+				reports 报告
+				views	视图
+				
+			orders 订单
+				app 应用程序
+				config 配置
+				forms 表格
+				views	视图
+				
+			pages 网页
+				app 应用程序
+				config 配置
+				forms 表格
+				views	视图
+				
+			partners 合作伙伴
+				app 应用程序
+				config 配置
+				forms 表格
+				views	视图
+			
+			promotions 促销
+				app 应用程序
+				config 配置
+				forms 表格
+				formsets 表格集
+				views	视图
+				
+			ranges 范围
+				app 应用程序
+				config 配置
+				forms 表格
+				models 模型
+				views	视图
+				
+			reports 报告
+				app 应用程序
+				config 配置
+				forms 表格
+				models 模型
+				reports 报告
+				utils 实用工具
+				views	视图
+				
+			reviews	视图
+				app 应用程序
+				config 配置
+				forms 表格
+				views	视图
+				 
+			shipping 运输
+				app 应用程序
+				config 配置
+				forms 表格
+				views	视图
+				
+			users 用户
+				app 应用程序
+				config 配置
+				forms 表格
+				tables 表
+				views	视图
+				
+			vouchers 优惠券
+				app 应用程序
+				config 配置
+				forms 表格
+				views	视图
+		
+		app 应用程序
+		config 配置
+		menu  菜单
+		models 模型
+		nav 导航
+		tables 表
+		views	视图
+		widgets 小部件
+			
+			
+	offer	报价
+		abstract_models  模型 抽象模型
+		admin  管理员
+		app 	应用程序
+		applicator	填充器
+		benefits	效益
+		conditions	条件
+		config	 配置
+		custom 	顾客
+		managers	管理者
+		models 	模型
+		reports  报告
+		results  结果
+		signals   信号 指示
+		utils	实用工具
+		views	视图
+
+	
+	order  订单
+		abstract_models 模型 抽象模型
+		admin 	管理员
+		config	 配置
+		exceptions	 例外情况
+		models  模型
+		processing  处理
+		reports  报告
+		signals   信号 指示
+		utils  实用工具
+	
+	
+	partner  合作伙伴
+		abstract_models 	模型 抽象模型
+		admin		管理员
+		availability 可用性
+		config	 配置
+		exceptions	 例外情况
+		importers	 进口商
+		models	 模型
+		prices	 价格
+		receivers 	接收器
+		strategy	 策略
+		views	 视图
+	
+
+	payment		支付
+		abstract_models	 模型 抽象模型
+		admin	 管理员
+		bankcards 银行卡
+		config	 配置
+		exceptions	 例外情况
+		forms	 表格
+		models 	模型
+	
+	
+	promotions 	促销
+		admin 	管理员
+		app	 	应用程序
+		conf	配置文件
+		config 	配置
+		context_processors	 上下文处理器
+		layout 	 布局
+		models	 模型
+		views	 视图
+		
+	
+	search  	搜索
+		app	 	应用程序
+		config 	配置
+		context_processors	 上下文处理器
+		facets 		刻面
+		features 	特征
+		forms	 表格
+		search_handlers 	搜索处理程序
+		search_indexes 	 检索索引
+		signals 	信号 指示
+		views 	视图
+	
+	
+	shipping	 运输
+		abstract_models	 模型 抽象模型
+		admin	 管理员
+		config	 配置
+		methods	 方法
+		models	 模型
+		repository 	仓库
+		scales	 规模 比例
+	
+
+	voucher	凭证
+		abstract_models	 模型 抽象模型
+		admin	 管理员
+		config	 配置
+		models	 模型
+		receivers	 接收器
+		reports	 报告
+		utils	 实用工具
+		
+		
+	wishlists	 愿望清单
+		abstract_models	 模型 抽象模型
+		admin	 管理员
+		config	 配置
+		forms	 表格		
+		formsets 表格集
+		models	 模型
+		
+
+
+
+oscar-core  
+		logging		记录
+			formatters	 格式化程序
+		
+	ajax	异步JavaScript和XML
+	application	 应用
+	compat	 兼容性
+	context_processors	 上下文处理器
+	customisation	 定制  定制化服务
+	decorators	 装饰
+	exceptions	 例外情况
+	loading		 加载
+	prices	 
+	utils	  	实用工具
+	validators	 验证器
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
